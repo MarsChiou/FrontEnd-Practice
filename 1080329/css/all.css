@@ -1,0 +1,268 @@
+/*nav fix #62d2a2 + fff*/
+#loading {
+  position: fixed;
+  background: #fff;
+  z-index: 1031;
+  width: 100vw;
+  height: 100vh;
+}
+
+#loading div {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: #9df3c4;
+  -webkit-animation: round_cc 0.7s linear infinite;
+          animation: round_cc 0.7s linear infinite;
+}
+
+#loading div:nth-child(1) {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+}
+
+#loading div:nth-child(2) {
+  top: calc(50% - 20px);
+  left: calc(50% - 5px);
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+#loading div:nth-child(3) {
+  top: calc(50% - 20px);
+  left: calc(50% + 10px);
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+#loading div:nth-child(4) {
+  top: calc(50% - 5px);
+  left: calc(50% + 10px);
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+
+#loading div:nth-child(5) {
+  top: calc(50% + 10px);
+  left: calc(50% + 10px);
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+#loading div:nth-child(6) {
+  top: calc(50% + 10px);
+  left: calc(50% - 5px);
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+
+#loading div:nth-child(7) {
+  top: calc(50% + 10px);
+  left: calc(50% - 20px);
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+#loading div:nth-child(8) {
+  top: calc(50% - 5px);
+  left: calc(50% - 20px);
+  -webkit-animation-delay: -3.5s;
+          animation-delay: -3.5s;
+}
+
+@-webkit-keyframes round_cc {
+  0% {
+    background: #9df3c4;
+  }
+  100% {
+    background: #1fab89;
+  }
+}
+
+@keyframes round_cc {
+  0% {
+    background: #9df3c4;
+  }
+  100% {
+    background: #1fab89;
+  }
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#banner_spot div {
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border: #000 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#banner {
+  height: 450px;
+  list-style: none;
+}
+
+#banner li {
+  width: 100%;
+  position: absolute;
+  margin-left: 100%;
+  display: none;
+  background-position: center;
+  background-size: cover;
+}
+
+#banner li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#banner li h4 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+#banner li div {
+  width: 60%;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#banner .active {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+
+#banner .red {
+  background-image: url(../imgs/1.jpg);
+}
+
+#banner .blue {
+  background-image: url(../imgs/2.jpg);
+}
+
+#banner .grey {
+  background-image: url(../imgs/3.jpg);
+}
+
+.card-body p {
+  margin-bottom: 50px;
+}
+
+.card-body a {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 44px);
+}
+
+.btn-success {
+  background-color: #1fab89;
+}
+
+.btn-success:hover {
+  background-color: #62d2a2;
+  border-color: #62d2a2;
+}
+
+#about {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #9df3c4;
+}
+
+#about .fab {
+  font-size: 7em;
+  color: #1fab89;
+}
+
+.seperate_line {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 150px;
+  background: #1fab89;
+  border-radius: 10px;
+}
+
+#special {
+  background: #d7fbe8;
+}
+
+.special_img img {
+  width: 100%;
+}
+
+.gotop {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #000 1px solid;
+  background-color: #1fab89;
+  z-index: 9999;
+  color: #d7fbe8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.gotop .fas {
+  font-size: 2em;
+}
+
+.gotop:hover {
+  background-color: #62d2a2;
+  padding-bottom: 5px;
+}
+
+#why {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#why .why_point {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#why .why_point:hover {
+  -webkit-box-shadow: 0.8px 0.8px 2px 2px #62d2a2;
+          box-shadow: 0.8px 0.8px 2px 2px #62d2a2;
+}
+
+#why .why_point:hover .why_icon {
+  font-size: 4.5em;
+}
+
+#why .why_icon {
+  font-size: 4em;
+  padding: 20px;
+  color: #1fab89;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#contact {
+  background-image: url("../imgs/c_b.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#contact #contact_form {
+  color: #fff;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=all.css.map */
